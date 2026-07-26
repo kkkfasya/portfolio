@@ -7,17 +7,17 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
+	integrations: [react()],
 
-  fonts: [
-    {
-      provider: fontProviders.google(),
-      name: "EB Garamond",
-      cssVariable: "--font-eb",
-    },
-  ],
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: "EB Garamond",
+			cssVariable: "--font-eb",
+		},
+	],
 
-  vite: {
-    plugins: [tailwindcss()],
-  },
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });

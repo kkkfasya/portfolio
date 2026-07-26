@@ -1,8 +1,11 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { AmericanPsychoCard } from "@/components/react/card"
+import { AmericanPsychoCard } from "@/components/react/Card"
+import { CuelumeProvider } from "@/components/react/CuelumeProvider"
 ---
 
 <Layout>
-<AmericanPsychoCard/>
+	<CuelumeProvider client:only="react">
+        <AmericanPsychoCard client:only="react"/>
+    </CuelumeProvider>
 </Layout>

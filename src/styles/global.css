@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-serif: var(--font-eb);
+	--font-serif: var(--font-eb);
+}
+
+.perspective-\[1200px\] {
+	perspective: 1200px;
+}
+
+.transform-style-preserve-3d {
+	transform-style: preserve-3d;
+}
+
+.backface-hidden {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.transition-transform {
+		transition: none !important;
+	}
 }
